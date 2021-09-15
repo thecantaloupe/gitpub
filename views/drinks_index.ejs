@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitPub</title>
     <style type="text/css">
         body {
@@ -14,6 +12,16 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
-    
+    <ul>
+        <% for(let i = 0; i < allDrinks.length; i++) { %>
+        <% 
+        let dname = allDrinks[i].name 
+        %>
+            <li>
+                <a href="/drinks/<%=i%>"><%=dname[0].toUpperCase() + dname.substring(1) %></a>
+            </li>
+        <% } %>
+    </ul>
+
 </body>
 </html>

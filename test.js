@@ -41,4 +41,7 @@ const drinks = [
     }
 ]
 
-  module.exports = drinks
+for(let i = 0; i < drinks.length; i++) {
+    let dname = drinks[i].name 
+    console.log(dname[0].toUpperCase() + dname.substring(1))
+}
